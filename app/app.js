@@ -2,7 +2,7 @@ var angular=require('angular');
 
 var app=angular.module('app',[]);
 
-require('./css/style.css');
+require('./css/style.scss');
 
 app.controller('myCtrl',function($scope)
 {
