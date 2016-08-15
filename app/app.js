@@ -2,8 +2,11 @@ var angular=require('angular');
 
 var app=angular.module('app',[]);
 
+require('./css/style.css');
+
 app.controller('myCtrl',function($scope)
 {
+
 $scope.tagLine="Let There Be Peace In The World";
 
 })
