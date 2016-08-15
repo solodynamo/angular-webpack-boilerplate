@@ -1,18 +1,12 @@
-var angular=require('angular');
-
-var app=angular.module('app',[]);
-
-require('./css/style.scss');
-
-app.controller('myCtrl',function($scope)
-{
-
-$scope.tagLine="Let There Be Peace In The World";
-
-})
 
 
-document.write('welcome to my app');
-console.log('app loaded');
-console.log('hii world');
-console.log("heya world");
+
+'use strict';
+
+
+
+//We need to import something to include it in bundle.js,Thus including ui-router into bundle we just giving its name not as String
+module.exports = require('angular').module('app', []);
+
+
+

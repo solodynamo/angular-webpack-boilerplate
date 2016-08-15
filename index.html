@@ -1,9 +1,11 @@
-<html>
+<html ng-app='app'>
     <head>
         <title>Angular-Webpack-Boilerplate</title>
+        <script src="app/build/bundle.js"></script>
 </head>
-<script src="app/build/bundle.js"></script>
-<body ng-app="app" ng-controller="myCtrl">
-    <h1 class="tagLine">Thought of the day is : {{tagLine}}</h1>
+
+
+<body  ng-controller="myCtrl as vm">
+    <h1 class="tagLine">Thought of the day is : {{vm.tagLine}}</h1>
 </body>
 </html>
